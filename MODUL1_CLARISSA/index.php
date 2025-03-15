@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailErr = "Email wajib diisi!";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $emailErr = "Format email tidak valid!";
+    } else {
+        $email = htmlspecialchars($_POST["email"]);
     }
 
     // **********************  3  **************************  
