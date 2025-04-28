@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 // 1. Tambahkan route untuk menampilkan daftar pengguna
-Route::get('/users', [UserController::class, 'index'])->name('users.index');
+Route::get('/users/index', [UserController::class, 'index'])->name('users.index');
 
 // 2. Tambahkan route untuk menampilkan form tambah pengguna
 Route::get('/users/create', [UserController::class, 'create'])->name('users.create');

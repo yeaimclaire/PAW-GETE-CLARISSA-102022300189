@@ -41,7 +41,7 @@
         <img src="{{ asset('images/logo.png') }}" alt="Logo EAD" class="logo">
         <h1>Selamat Datang di Sistem Manajemen Pengguna</h1>
         <p>Silakan klik tombol di bawah untuk mulai mengelola data pengguna.</p>
-        <a href="{{ url('/users') }}" class="btn">Kelola Pengguna</a>
+        <a href="{{ url('/users/index') }}" class="btn">Kelola Pengguna</a>
     </div>
 </body>
 </html>
